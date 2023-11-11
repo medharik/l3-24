@@ -73,7 +73,8 @@ public static void main(String[] args) {
 	
 	
 	
-	
+	//https://github.com/medharik/l3-24
+	 
 	int s=0;
 	//ajouter 3 a s 
 	s=s+3;//s=3

@@ -41,9 +41,7 @@ System.out.println(" a est "+a);
 }
 //int s=1;
 //int ss= (s+s);
-for(double df=0.0 ; df <1.0 ; df+=0.1) {
- System.out.println("df"+df) ;
- }
+
 System.out.println("a dehors "+a);
 //System.out.println("local dehors "+local);
 
