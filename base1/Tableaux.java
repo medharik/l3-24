@@ -1,6 +1,11 @@
 package base1;
 
 public class Tableaux {
+	
+	// java : langage de programmation compilé, OO, crossPlateforme (se base la JVM)
+	//installation ; 
+	
+	//
 public static void main(String[] args) {
 	// tableau en java : ensemble de valeurs indexees de meme  type
 //decalarer un tableau
@@ -38,6 +43,26 @@ double[]    t3,t4;
 
 
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 }
 }
