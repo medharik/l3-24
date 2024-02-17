@@ -15,7 +15,6 @@ $cnx = new PDO('mysql:host=localhost;dbname=dbl3', "root", "");
 $rp=$cnx->prepare( "select * from produit" );
 //execution
 $rp->execute();
-
 $produits=$rp->fetchAll(); //recupere tout les enregistrements
 print_r($produits);
 
