@@ -2,15 +2,24 @@
 // programmation modulaire/procedurale / fonctionelle
 //connexion bd
 function connecter_db() {
-$cnx = new PDO('mysql:host=localhost;dbname=dbl3', "root", "");
+  try {
+      $cnx = new PDO('mysql:host=localhost;dbname=dbl30', "root", "");
+//    $cnx->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+  } catch (\Throwable $th) {
+echo "Erreur de connexion bd ".$th->getMessage();
+  }  
 return $cnx;
 }
 
 // ajouter un produit
 function ajouter_produit($libelle,$prix)  {
- $cnx=   connecter_db();
- $rp=$cnx->prepare( "insert into produit (libelle,prix ) values (?,?)" );
- $rp->execute([$libelle,$prix]);
+try {
+    $cnx=   connecter_db();
+    $rp=$cnx->prepare( "insert into produit (libelle,prix ) values (?,?)" );
+    $rp->execute([$libelle,$prix]);
+} catch (\Throwable $th) {
+   echo "Erreur d'ajout du produit  : ".$th->getMessage();
+}
 }
 // ajouter_produit('hp',90000)
 

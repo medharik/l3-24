@@ -26,8 +26,8 @@ $produits=all();
             <td><?=$p['prix']?></td>
             <td>
                 <a href="delete.php?id=<?=$p['id']?>">Supprimer</a>
-                <a href="">Consulter</a>
-                <a href="">Modifier</a>
+                <a href="show.php?id=<?=$p['id']?>">Consulter</a>
+                <a href="edit.php?id=<?=$p['id']?>">Modifier</a>
             </td>
         </tr>
 <?php }?>

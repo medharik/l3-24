@@ -4,5 +4,5 @@ include_once "functions.php";
 // $prix=$_POST['prix'];
 extract($_POST);
 ajouter_produit($libelle,$prix);
-home();
+// home();
 ?>
