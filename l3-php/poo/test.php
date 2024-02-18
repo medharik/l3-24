@@ -1,7 +1,16 @@
 <?php 
-include "Produit.class.php";
+include "Categorie.class.php";
 //instancier la classe Produit (pour construire un objet de type produit )
-$produit1=new Produit("hp dv7",8000);
-$produit1->afficher();
+// $hp=new Produit("acer 5",5000);
+// // $produit1->afficher();
+// // $produit1->ajouter();
+// // Produit::supprimer(4);
+// // $hp->modifier(3);
+// // $produits=Produit::all();
+// // print_r($produits[0]);
+// $produit=Produit::find(2);
+// print_r($produit->libelle);
+$eletro=new Categorie("eletromenager");
+Categorie::supprimer(1);
 
 ?>
